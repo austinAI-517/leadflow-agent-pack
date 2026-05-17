@@ -1,0 +1,10 @@
+[project]
+name = "leadflow-agent-pack"
+version = "0.1.0"
+description = "AI-assisted lead intake, scoring, and follow-up drafting starter pack."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
