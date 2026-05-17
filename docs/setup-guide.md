@@ -44,3 +44,7 @@ Each processed lead is written as one JSON line with:
 
 Keep human review in the first version. Drafting replies is useful and safe; automatically sending replies should only be added after the business confirms approval rules, tone, and compliance boundaries.
 
+Before testing with real lead exports, read:
+
+- `docs/redaction-checklist.md`
+- `docs/support-boundary.md`
