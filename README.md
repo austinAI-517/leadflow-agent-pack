@@ -1,6 +1,6 @@
 # LeadFlow Agent Pack
 
-LeadFlow Agent Pack is a practical demo and starter kit for AI-assisted lead intake, scoring, and reply drafting.
+LeadFlow Agent Pack is a practical demo and starter kit for AI-assisted lead intake, scoring, and reply drafting before a business buys or configures a full CRM.
 
 Public demo: this repo shows the lightweight local workflow.
 
@@ -20,6 +20,8 @@ It turns raw lead rows into:
 
 The demo is intentionally lightweight: it runs locally, uses no paid API, and keeps the default workflow human-reviewed instead of auto-sending messages.
 
+![LeadFlow demo preview](assets/demo-preview.png)
+
 ## Who It Helps
 
 LeadFlow is designed for small service businesses that receive leads from forms, ads, email exports, spreadsheets, or CRM exports and need a faster way to decide who to follow up with first.
@@ -32,6 +34,10 @@ Good first use cases:
 - legal or consulting intake triage
 - local business quote requests
 
+Best first niche:
+
+- home services, renovation, real estate, consulting, agency, or legal-intake teams with exported form/ad/email leads
+
 ## Quick Start
 
 ```bash
@@ -39,6 +45,14 @@ python3 -m leadflow_agent.cli examples/demo-leads.csv sample-output/demo-output.
 ```
 
 Open `sample-output/demo-output.jsonl` to inspect the generated lead summaries, scores, priorities, next actions, and reply drafts.
+
+Home services sample:
+
+```bash
+python3 -m leadflow_agent.cli examples/home-services-leads.csv sample-output/home-services-output.jsonl
+```
+
+Open `sample-output/home-services-output.jsonl` to inspect a narrower renovation/home-services example.
 
 ## Example Output
 
