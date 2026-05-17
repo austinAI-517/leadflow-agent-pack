@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LeadFlow Agent Pack Demo Preview</title>
+    <style>
+      body { margin: 0; background: #f6f7f9; color: #171717; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 0; }
+      * { box-sizing: border-box; }
+      .frame { width: 1600px; height: 1000px; padding: 58px 70px; }
+      .top { display: flex; justify-content: space-between; gap: 48px; align-items: flex-start; margin-bottom: 38px; }
+      h1 { margin: 0 0 14px; font-size: 54px; line-height: 1.02; font-weight: 780; }
+      .subtitle { max-width: 780px; color: #5b616e; font-size: 24px; line-height: 1.35; }
+      .badge, .panel { background: #fff; border: 1px solid #d9dee8; border-radius: 8px; }
+      .badge { padding: 16px 20px; min-width: 340px; }
+      .badge strong { display: block; font-size: 22px; margin-bottom: 6px; }
+      .badge span, .panel-title span, .footer { color: #5b616e; }
+      .grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 28px; }
+      .panel { overflow: hidden; }
+      .panel-title { display: flex; justify-content: space-between; align-items: center; padding: 22px 26px; border-bottom: 1px solid #d9dee8; }
+      .panel-title h2 { margin: 0; font-size: 22px; line-height: 1.15; }
+      table { width: 100%; border-collapse: collapse; }
+      th, td { padding: 18px 22px; text-align: left; vertical-align: top; border-bottom: 1px solid #d9dee8; font-size: 18px; line-height: 1.28; }
+      th { color: #5b616e; font-size: 14px; text-transform: uppercase; font-weight: 700; }
+      tr:last-child td { border-bottom: 0; }
+      .score { font-weight: 760; font-variant-numeric: tabular-nums; }
+      .pill { display: inline-flex; align-items: center; justify-content: center; min-width: 72px; height: 32px; border-radius: 8px; padding: 0 12px; font-size: 14px; font-weight: 760; text-transform: uppercase; }
+      .hot { color: #b42318; background: #fff1f0; border: 1px solid #f4b8b2; }
+      .low { color: #475467; background: #f2f4f7; border: 1px solid #d0d5dd; }
+      .reply { padding: 26px; }
+      .reply-card { border: 1px solid #d9dee8; border-radius: 8px; padding: 24px; margin-bottom: 18px; }
+      .reply-card:last-child { margin-bottom: 0; }
+      .reply-head { display: flex; justify-content: space-between; align-items: center; gap: 18px; margin-bottom: 14px; }
+      .reply-head strong { font-size: 20px; }
+      .reply p { margin: 0; color: #303642; font-size: 18px; line-height: 1.45; }
+      .footer { display: flex; align-items: center; justify-content: space-between; margin-top: 30px; font-size: 18px; }
+      .green { color: #067647; font-weight: 760; }
+    </style>
+  </head>
+  <body>
+    <main class="frame">
+      <section class="top">
+        <div><h1>LeadFlow Agent Pack</h1><div class="subtitle">Turn exported service-business leads into priority, next action, and ready-to-edit reply drafts before buying or configuring a full CRM.</div></div>
+        <div class="badge"><strong>Human-reviewed by default</strong><span>No auto-send. No paid API key required for the demo.</span></div>
+      </section>
+      <section class="grid">
+        <div class="panel">
+          <div class="panel-title"><h2>Home services sample leads</h2><span>CSV export in, triage output out</span></div>
+          <table><thead><tr><th>Business</th><th>Need</th><th>Score</th><th>Priority</th></tr></thead><tbody>
+            <tr><td>Bennett Kitchen Studio</td><td>Kitchen remodel quote follow-up</td><td class="score">100</td><td><span class="pill hot">hot</span></td></tr>
+            <tr><td>Brooks Roofing</td><td>Urgent roof leak estimate</td><td class="score">100</td><td><span class="pill hot">hot</span></td></tr>
+            <tr><td>Shah Design Build</td><td>Flag ready-to-book renovation leads</td><td class="score">100</td><td><span class="pill hot">hot</span></td></tr>
+            <tr><td>Martin Handyman</td><td>Comparing options for small repairs</td><td class="score">15</td><td><span class="pill low">low</span></td></tr>
+          </tbody></table>
+        </div>
+        <div class="panel">
+          <div class="panel-title"><h2>Ready-to-edit follow-up</h2><span>Drafts stay under human review</span></div>
+          <div class="reply">
+            <div class="reply-card"><div class="reply-head"><strong>Bennett Kitchen Studio</strong><span class="pill hot">reply fast</span></div><p>Thanks for reaching out. This looks ready to move, so I can help you map the next step quickly. From your note, the main need is kitchen remodel quote follow-up and booking help.</p></div>
+            <div class="reply-card"><div class="reply-head"><strong>Brooks Roofing</strong><span class="pill hot">urgent</span></div><p>Thanks for the details. The urgent roof leak estimate should be prioritized today. If you send one or two preferred times, I can confirm the best next step.</p></div>
+            <div class="reply-card"><div class="reply-head"><strong>Martin Handyman</strong><span class="pill low">nurture</span></div><p>I have enough context to point you in a useful direction. If you can share the timeline, budget range, and must-have result, I can suggest the simplest path.</p></div>
+          </div>
+        </div>
+      </section>
+      <section class="footer"><span>Input: lead rows from forms, ads, email exports, spreadsheets, Airtable, Notion, or CRM exports.</span><span class="green">Output: score, priority, next action, reply draft.</span></section>
+    </main>
+  </body>
+</html>
