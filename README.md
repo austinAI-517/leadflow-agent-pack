@@ -1,6 +1,14 @@
 # LeadFlow Agent Pack
 
-LeadFlow Agent Pack is a practical demo and starter kit for AI-assisted lead intake.
+LeadFlow Agent Pack is a practical demo and starter kit for AI-assisted lead intake, scoring, and reply drafting.
+
+Public demo: this repo shows the lightweight local workflow.
+
+Paid starter pack: the self-serve template package is available on Gumroad at:
+
+`https://austinmoore41.gumroad.com/l/leadflow-agent-pack`
+
+Use the public demo to inspect the workflow first. Buy the paid pack if you want the packaged starter kit, setup notes, customization path, and async template support.
 
 It turns raw lead rows into:
 
@@ -73,3 +81,15 @@ tests/
 - It does not require API keys.
 - It is meant to be customized before live business use.
 
+## What This Is Not
+
+- It is not a full CRM.
+- It is not an email auto-sender.
+- It is not a managed sales service.
+- It does not include private customer data.
+
+## Paid Pack Boundary
+
+The paid pack is a digital template. Basic async setup questions are in scope. Custom installation, CRM connection, and business-specific scoring changes are separate paid work.
+
+Before using real lead exports, remove customer-sensitive data from any sample you paste into AI tools, public issues, or support messages.
